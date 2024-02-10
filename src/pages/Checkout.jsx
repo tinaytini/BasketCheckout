@@ -5,11 +5,11 @@ import TableTitle from '../components/TableTitle';
 import TableBody from  '../components/TableBody';
 import CardNumField from '../components/CardNumField';
 import Button from '../components/Button';
+import { Link } from 'react-router-dom';
 // import { removeProduct } from '../redux/basketSlice';
 
 
 const Checkout = () => {
-    // const basket = useSelector((state) => state.basket);
     return (
         <div>
             <div className='w-full p-16 text-sm'>
@@ -23,7 +23,7 @@ const Checkout = () => {
                 <ItemsCount title='Total Price:' count='£18.87' />
                 <CardNumField />
                 <div className='flex flex-row justify-end mt-6 px-8'>
-                    <a href='/example_html/products' className='text-s p-2 rounded border border-gray-200 hover:bg-gray-200 hover:bg-gray-300'>Continue Shopping</a>
+                    <Link to='/' className='text-s p-2 rounded border border-gray-200 hover:bg-gray-200 hover:bg-gray-300'>Continue Shopping</Link>
                     <Button color='blue'>Checkout</Button>
                 </div>
             </div>
